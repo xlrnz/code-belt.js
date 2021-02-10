@@ -43,13 +43,7 @@ String.prototype.kebab_case = function () {
 };
 
 // msDecoder
-// 1000ms == 1s, 60000ms = 60s/1m 3600s = 1h
-function ms(ms, floor = false) {
-  return {
-    hour: floor ? Math.floor(ms / 3600000) : ms / 3600000,
-    minute: floor ? Math.floor(ms / 60000) : ms / 60000,
-    seconds: floor ? Math.floor(ms / 1000) : ms / 1000,
-  };
-}
+// 1000ms == 1s, 60000ms = 1m 3600000ms = 1h
+
 // msEncoder
 // create element with emmet annotation in js;
